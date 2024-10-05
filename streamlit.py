@@ -9,7 +9,7 @@ from pathlib import Path
 import cv2
 import streamlit as st
 
-MODEL = keras.models.load_model("/saved_models/3")
+MODEL = keras.layers.TFSMLayer("/saved_models/3", call_endpoint='serving_default')
 CLASS_NAMES = ["angular_leaf_spot", "bean_rust", "healthy"]
 
 def read_file_as_image(data) -> np.ndarray:

@@ -4,3 +4,5 @@ keras
 opencv-python
 streamlit
 tensorflow
+pathlib
+uvicorn

@@ -3,3 +3,4 @@ pillow
 keras
 opencv-python
 streamlit
+tensorflow

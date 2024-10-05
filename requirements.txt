@@ -1,7 +1,7 @@
 numpy
 pillow
 keras
-opencv-python
+opencv-python-headless
 streamlit
 tensorflow
 pathlib

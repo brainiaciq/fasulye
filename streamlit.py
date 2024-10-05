@@ -4,7 +4,7 @@ from PIL import Image
 import keras
 import cv2
 import streamlit as st
-
+import tensorflow as tf
 
 MODEL = keras.models.load_model("/saved_models/2")
 CLASS_NAMES = ["angular_leaf_spot", "bean_rust", "healthy"]

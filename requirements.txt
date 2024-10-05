@@ -1,6 +1,5 @@
 numpy
-io
-PIL
+pillow
 keras
-cv2
+opencv-python
 streamlit

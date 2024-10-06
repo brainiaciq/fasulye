@@ -1,8 +1,8 @@
 numpy
 pillow
-keras
+keras==2.15.0
 opencv-python-headless
 streamlit
-tensorflow
+tensorflow==2.15.0
 pathlib
 uvicorn

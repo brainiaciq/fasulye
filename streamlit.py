@@ -9,7 +9,7 @@ from pathlib import Path
 import cv2
 import streamlit as st
 
-MODEL = keras.models.load_model("my_model.keras")
+MODEL = keras.saving.load_model('my_model.keras')
 CLASS_NAMES = ["angular_leaf_spot", "bean_rust", "healthy"]
 
 def read_file_as_image(data) -> np.ndarray:
@@ -17,7 +17,7 @@ def read_file_as_image(data) -> np.ndarray:
     return image
 
 camera_input = st.camera_input('Kameradan resim çek')
-gallery_input = st.file_uploader(' VEYA Fasulye Fotoğrafı Ekleyin', accept_multiple_files=False, )    
+gallery_input = st.file_uploader(' VEYA Fasulye Fotoğrafı Ekleyin', accept_multiple_files=False)    
     
 if camera_input is not None:
     img_bytes = camera_input.getvalue()

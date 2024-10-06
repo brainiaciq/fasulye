@@ -9,7 +9,7 @@ from pathlib import Path
 import cv2
 import streamlit as st
 
-MODEL = keras.saving.load_model('my_model.keras')
+MODEL = keras.models.load_model("/saved_models/2")
 CLASS_NAMES = ["angular_leaf_spot", "bean_rust", "healthy"]
 
 def read_file_as_image(data) -> np.ndarray:

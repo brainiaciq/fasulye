@@ -9,6 +9,8 @@ from pathlib import Path
 import cv2
 import streamlit as st
 
+keras.backend.set_image_data_format("channels_first")
+
 MODEL = keras.models.load_model("my_model.keras")
 CLASS_NAMES = ["angular_leaf_spot", "bean_rust", "healthy"]
 

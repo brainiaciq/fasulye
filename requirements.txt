@@ -1,4 +1,4 @@
-numpy==1.21.6
+numpy==1.21.1
 pillow
 keras
 opencv-python-headless

@@ -4,3 +4,4 @@ pillow
 keras
 opencv-python-headless
 streamlit
+tensorflow

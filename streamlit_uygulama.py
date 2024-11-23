@@ -1,4 +1,3 @@
-#import keras.saving
 import uvicorn
 import os
 import numpy as np
@@ -8,11 +7,10 @@ import tensorflow as tf
 import keras
 from pathlib import Path
 import cv2
-from fastapi.middleware.cors import CORSMiddleware
 import streamlit as st
 
 
-MODEL = keras.models.load_model("C:/Fasulye/api/mymodel.keras")
+MODEL = keras.models.load_model("mymodel.keras")
 CLASS_NAMES = ["angular_leaf_spot", "bean_rust", "healthy"]
 
 def read_file_as_image(data) -> np.ndarray:

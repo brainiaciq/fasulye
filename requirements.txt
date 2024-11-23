@@ -1,6 +1,6 @@
 numpy
 io
-PIL
+pillow
 keras
 cv2
 streamlit

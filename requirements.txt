@@ -2,5 +2,5 @@ numpy
 Python-IO
 pillow
 keras
-cv2
+opencv-python-headless
 streamlit
